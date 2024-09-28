@@ -11,15 +11,15 @@ func main() {
 
 	userNames = append(userNames, "John")
 	userNames = append(userNames, "Jane")
-	userNames = append(userNames, "Jane")
-	userNames = append(userNames, "Jane")
-	userNames = append(userNames, "Jane")
-	userNames = append(userNames, "Jane")
-	userNames = append(userNames, "Jane")
-	userNames[0] = "Doe"
-	userNames[1] = "Smith"
 
 	fmt.Println(userNames)
-	fmt.Println(len(userNames))
-	fmt.Println(cap(userNames))
+
+	courseRating := make(map[string]float64, 4)
+
+	courseRating["Java"] = 4.2
+	courseRating["Go"] = 4.7
+	courseRating["Python"] = 4.8
+
+	fmt.Println(courseRating)
+	fmt.Println(len(courseRating))
 }
