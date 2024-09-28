@@ -13,4 +13,8 @@ func main() {
 	for i := 0; i < len(prices); i++ {
 		fmt.Printf("Product %s costs $%.2f\n", productNames[i], prices[i])
 	}
+
+	//slice
+	featuredPrices := prices[1:3]
+	fmt.Println(featuredPrices)
 }
