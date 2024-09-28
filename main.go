@@ -3,26 +3,23 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello, World!")
-	websites := map[string]string{
-		"SitePoint": "https://www.sitepoint.com",
-		"Google":    "https://www.google.com",
-		"Facebook":  "https://www.facebook.com",
-	}
+	userNames := make([]string, 2, 5)
 
-	fmt.Println(websites["SitePoint"])
-	fmt.Println(websites["Google"])
+	fmt.Println(userNames)
+	fmt.Println(len(userNames))
+	fmt.Println(cap(userNames))
 
-	fmt.Println(websites)
-	fmt.Println("sdfsafdsa", websites["Instagram"])
+	userNames = append(userNames, "John")
+	userNames = append(userNames, "Jane")
+	userNames = append(userNames, "Jane")
+	userNames = append(userNames, "Jane")
+	userNames = append(userNames, "Jane")
+	userNames = append(userNames, "Jane")
+	userNames = append(userNames, "Jane")
+	userNames[0] = "Doe"
+	userNames[1] = "Smith"
 
-	websites["Instagram"] = "https://www.instagram.com"
-
-	fmt.Println(websites)
-	fmt.Println(websites["Instagram"])
-
-	delete(websites, "SitePoint")
-
-	fmt.Println(websites)
-
+	fmt.Println(userNames)
+	fmt.Println(len(userNames))
+	fmt.Println(cap(userNames))
 }
